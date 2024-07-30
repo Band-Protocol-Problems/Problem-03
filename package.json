@@ -1,0 +1,30 @@
+{
+  "name": "transaction-client",
+  "version": "1.0.0",
+  "description": "A module to broadcast transactions and monitor their status",
+  "main": "index.ts",
+  "scripts": {
+    "example": "npx ts-node src/example.ts",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chanongul/Band-Protocol-Problem-03"
+  },
+  "keywords": [
+    "transaction",
+    "client",
+    "typescript"
+  ],
+  "author": "Chanon Gulgattimas",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
