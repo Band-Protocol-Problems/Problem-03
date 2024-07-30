@@ -181,12 +181,6 @@ The `TransactionClient` module is designed to broadcast a transaction to a serve
    - **Assumption**: The server is assumed to return valid JSON responses and status codes as described. The module handles unexpected responses with generic error messages.
      ling behavior.
 
-## Running example.ts script
-
-```bash
-npm run example
-```
-
 ## Testing
 
 The module includes tests using Jest. To run the tests, ensure you have Jest installed and run:
@@ -200,3 +194,9 @@ The test suite covers:
 - Broadcasting transactions and handling errors.
 - Checking transaction status and handling errors.
 - Monitoring transaction status with polling and retries.
+
+## Running example.ts script
+
+```bash
+npm run example
+```
