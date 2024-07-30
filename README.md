@@ -179,12 +179,7 @@ The `TransactionClient` module is designed to broadcast a transaction to a serve
 2. **Server Behavior**:
 
    - **Assumption**: The server is assumed to return valid JSON responses and status codes as described. The module handles unexpected responses with generic error messages.
-
-### Diagrams
-
-### Conclusion
-
-The `TransactionClient` module is designed to provide a straightforward and flexible solution for broadcasting and monitoring transactions. The decisions made ensure a balance between functionality, performance, and ease of use. Future enhancements could include more advanced error handling, support for websockets, and additional configuration options for polling behavior.
+     ling behavior.
 
 ## Running example.ts script
 
