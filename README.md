@@ -1,5 +1,32 @@
 # TransactionClient
 
+## Table of Contents
+
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Installation](#installation)
+   - [Prerequisites](#1-prerequisites)
+   - [Installation Steps](#2-installation-steps)
+     - [Clone the Repository](#21-clone-the-repository)
+     - [Install Dependencies](#22-install-dependencies)
+4. [Usage](#usage)
+   - [Importing the Module](#importing-the-module)
+   - [Creating an Instance](#creating-an-instance)
+   - [Broadcasting a Transaction](#broadcasting-a-transaction)
+   - [Monitoring a Transaction](#monitoring-a-transaction)
+5. [Documentation](#documentation)
+   - [Methods](#methods)
+     - [`broadcastTransaction(payload: BroadcastPayload): Promise<string>`](#broadcasttransactionpayload-broadcastpayload-promisestring)
+     - [`checkTransactionStatus(txHash: string): Promise<string>`](#checktransactionstatustxhash-string-promisestring)
+     - [`monitorTransaction(txHash: string, interval?: number, maxRetries?: number, statusCallback?: StatusCallback): Promise<string>`](#monitortransactiontxhash-string-interval-number-maxretries-number-statuscallback-statuscallback-promisestring)
+   - [Status Constants](#status-constants)
+6. [Design Decisions, Trade-offs, and Assumptions](#design-decisions-trade-offs-and-assumptions)
+   - [Design Decisions](#design-decisions)
+   - [Trade-offs](#trade-offs)
+   - [Assumptions](#assumptions)
+7. [Testing](#testing)
+8. [Running example.ts script](#running-examplets-script)
+
 ## Overview
 
 `TransactionClient` is a TypeScript module designed for broadcasting and monitoring transactions. This client interacts with a HTTP server to broadcast transactions and subsequently monitor their status until finalization. It provides methods to send a transaction request and check its status periodically.
