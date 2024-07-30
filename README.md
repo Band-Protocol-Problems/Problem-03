@@ -186,6 +186,12 @@ The `TransactionClient` module is designed to broadcast a transaction to a serve
 
 The `TransactionClient` module is designed to provide a straightforward and flexible solution for broadcasting and monitoring transactions. The decisions made ensure a balance between functionality, performance, and ease of use. Future enhancements could include more advanced error handling, support for websockets, and additional configuration options for polling behavior.
 
+## Running example.ts script
+
+```bash
+npm run example
+```
+
 ## Testing
 
 The module includes tests using Jest. To run the tests, ensure you have Jest installed and run:
